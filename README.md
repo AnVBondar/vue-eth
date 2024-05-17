@@ -1,9 +1,20 @@
-# Vue 3 + TypeScript + Vite
+# Ethereum - staking list
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Implamation of the internet page with information related to staking pools of the Ethereum. All data received from the API(https://api.ethrewards.io/swagger/index.html#/Base/get_entities_stats).
+Following features have been added:
+1. Wallet Connection such as MetaMask, receiving  the user's wallet and sign message address.
+2. Data filtering and pagination;
 
-## Recommended Setup
+## Technologies Used
+This project utilizes the following technologies and libraries:
+- Vue.js 3
+- Axios
+- TypeScript
+- JavaScript
+- Sass (SCSS) with BEM (Block, Element, Modifier) methodology.
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+## Preview Link
+[DEMO LINK] (https://anvbondar.github.io/vue-eth/)
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+## Design Mockup Link
+[Design link] (https://www.figma.com/file/tIUCZ1TwSxqHcIPxjZcfXB/TEST?type=design&node-id=0-1&mode=design&t=mAU8wPukbIQ9s1Ju-0)
