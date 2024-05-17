@@ -130,9 +130,9 @@ const getSortedEthereum = async (sortName: keyof Ethereum) => {
 
   const order =
     sortValues.sort_by === sortName
-      ? sortValues.order === "asc"
+      ? (sortValues.order === "asc"
         ? "desc"
-        : "asc"
+        : "asc")
       : "asc";
 
   sortValues.sort_by = sortName;
@@ -140,8 +140,10 @@ const getSortedEthereum = async (sortName: keyof Ethereum) => {
 
   try {
     const response = await axios.get(
-      `${BASE_URL}/stats?page=${currentPage.value}&amp;limit=20&amp;sort_by=${sortName}&amp;order=${order}`
+      `${BASE_URL}/stats?page=${currentPage.value}&limit=20&sort_by=${sortName}&order=${order}`
     );
+    console.log(response.data.items);
+    
     ethereumFromAPI.value = response.data.items;
   } catch (error) {
     console.log(error);
